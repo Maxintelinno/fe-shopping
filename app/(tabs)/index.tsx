@@ -165,14 +165,14 @@ export default function HomeScreen() {
           <View style={styles.headerActionIcons}>
             <TouchableOpacity style={styles.headerIcon}>
               <SymbolView name="cart" tintColor="#FFFFFF" size={28} />
-              <View style={styles.badgeContainer}>
-                <Text style={styles.badgeText}>99+</Text>
+              <View style={[styles.badgeContainer, { borderColor: colors.accent }]}>
+                <Text style={[styles.badgeText, { color: colors.accent }]}>99+</Text>
               </View>
             </TouchableOpacity>
             <TouchableOpacity style={styles.headerIcon}>
               <SymbolView name="bubble.left.and.bubble.right" tintColor="#FFFFFF" size={26} />
-              <View style={styles.badgeContainer}>
-                <Text style={styles.badgeText}>57</Text>
+              <View style={[styles.badgeContainer, { borderColor: colors.accent }]}>
+                <Text style={[styles.badgeText, { color: colors.accent }]}>57</Text>
               </View>
             </TouchableOpacity>
           </View>
@@ -231,10 +231,10 @@ export default function HomeScreen() {
           ))}
         </ScrollView>
 
-        {/* Shopee Live */}
+        {/* Siam LIVE */}
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
-            <Text style={styles.shopeeTitle}>Shopee Live</Text>
+            <Text style={[styles.shopeeTitle, { color: colors.accent }]}>Siam LIVE</Text>
             <TouchableOpacity><Text style={styles.seeMore}>See All &gt;</Text></TouchableOpacity>
           </View>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.horizontalGrid}>
@@ -252,10 +252,10 @@ export default function HomeScreen() {
           </ScrollView>
         </View>
 
-        {/* Shopee Video */}
+        {/* Siam Video */}
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
-            <Text style={styles.shopeeTitle}>Shopee Video</Text>
+            <Text style={[styles.shopeeTitle, { color: colors.accent }]}>Siam Video</Text>
             <TouchableOpacity><Text style={styles.seeMore}>See All &gt;</Text></TouchableOpacity>
           </View>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.horizontalGrid}>
@@ -272,8 +272,8 @@ export default function HomeScreen() {
         </View>
 
         {/* Discover Product Grid */}
-        <View style={styles.discoveryHeader}>
-          <Text style={styles.discoveryTitle}>Daily Discover</Text>
+        <View style={[styles.discoveryHeader, { borderBottomColor: colors.accent }]}>
+          <Text style={[styles.discoveryTitle, { color: colors.accent }]}>Daily Discover</Text>
         </View>
         <View style={styles.gridContainer}>
           {PRODUCTS.map((item) => (

@@ -8,7 +8,7 @@ export default {
     tint: tintColorLight,
     tabIconDefault: '#9E9E9E',
     tabIconSelected: tintColorLight,
-    accent: '#D35400', // Burnt Orange (ส้มอิฐ)
+    accent: '#1B3A57', // Indigo (น้ำเงินคราม)
     secondary: '#A4C639', // Lime Green (เขียวยอดตอง)
     surface: '#FFFFFF',
     border: '#E0E0E0',
@@ -19,7 +19,7 @@ export default {
     tint: tintColorDark,
     tabIconDefault: '#616161',
     tabIconSelected: tintColorDark,
-    accent: '#D35400', // Burnt Orange (ส้มอิฐ)
+    accent: '#1B3A57', // Indigo (น้ำเงินคราม)
     secondary: '#1B3A57', // Navy Blue as secondary in dark
     surface: '#1B3A57',
     border: '#333333',

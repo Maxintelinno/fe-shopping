@@ -235,7 +235,7 @@ export default function HomeScreen() {
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
             <Text style={[styles.shopeeTitle, { color: colors.accent }]}>Siam LIVE</Text>
-            <TouchableOpacity><Text style={styles.seeMore}>See All &gt;</Text></TouchableOpacity>
+            <TouchableOpacity onPress={() => router.push('/siam-live')}><Text style={styles.seeMore}>See All &gt;</Text></TouchableOpacity>
           </View>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.horizontalGrid}>
             {SHOPEE_LIVE.map((item) => (

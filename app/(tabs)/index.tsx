@@ -150,17 +150,22 @@ export default function HomeScreen() {
       {/* Custom Shopee Header */}
       <View style={[styles.header, { backgroundColor: colors.accent }]}>
         <View style={styles.headerTopRow}>
-          <View style={styles.searchBarContainer}>
+          <TouchableOpacity
+            style={styles.searchBarContainer}
+            onPress={() => router.push('/all-products' as any)}
+          >
             <SymbolView name="magnifyingglass" tintColor="#8E8E93" size={20} />
             <TextInput
-              placeholder="Epson L3250"
-              placeholderTextColor={colors.accent}
+              placeholder="ค้นหาสินค้า..."
+              placeholderTextColor="#999"
               style={styles.searchInput}
+              editable={false}
+              pointerEvents="none"
             />
-            <TouchableOpacity style={styles.cameraIconInside}>
+            <View style={styles.cameraIconInside}>
               <SymbolView name="camera" tintColor="#8E8E93" size={24} />
-            </TouchableOpacity>
-          </View>
+            </View>
+          </TouchableOpacity>
 
           <View style={styles.headerActionIcons}>
             <TouchableOpacity style={styles.headerIcon}>

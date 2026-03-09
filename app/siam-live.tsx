@@ -117,7 +117,7 @@ export default function SiamLiveScreen() {
                 </View>
 
                 <View style={styles.headerRight}>
-                    <TouchableOpacity style={styles.headerIconButton}>
+                    <TouchableOpacity onPress={() => router.push('/all-products' as any)} style={styles.headerIconButton}>
                         <SymbolView name="magnifyingglass" tintColor="#333" size={24} />
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.headerIconButton}>
